@@ -13,6 +13,6 @@ RUN pip install --upgrade pip
 COPY . $DockerHOME
 RUN pip install -r requirements.txt
 
-EXPOSE 8005
+EXPOSE 8000
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8005" ]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000" ]
