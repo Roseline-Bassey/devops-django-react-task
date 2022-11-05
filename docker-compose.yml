@@ -2,15 +2,15 @@ version: "3"
 
 services:
     frontend:
-        image: frontend
-        container_name: frontend
+        image: roselinebb/frontend:latest
+        container_name: frontendpage
         ports:
           - 3000:3000
         depends_on:
           - backend
 
     backend:
-        image: backend
+        image: roseline/backend:lastest
         container_name: backend
         command: python manage.py runserver 0.0.0.0:8000
         ports:
